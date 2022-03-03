@@ -6,7 +6,7 @@
             @click="clickOnFirstWelcomeText()"
         >
             <h1>Добро пожаловать!</h1>
-            <h6>Тыкните куда-нибудь</h6>
+            <h4>Тыкните куда-нибудь</h4>
         </div>
         <div
             class="welcome-text"
@@ -73,10 +73,10 @@ export default {
 
 <style scoped>
 .intro {
-    width: 100vw;
     height: 100vh;
-    background-color: indigo;
+    background-color: #85c8b8;
 }
+
 .welcome-text {
     width: 100%;
     height: 100%;
@@ -86,6 +86,5 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 5%;
-    color: whitesmoke;
 }
 </style>
