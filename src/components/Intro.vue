@@ -3,7 +3,7 @@
         <div class="background-prism">
             <div class="welcome-text">
                 <h1>LANDING</h1>
-                <h6>или резюме Бабенкова Андрея</h6>
+                <h6>или мое резюме</h6>
             </div>
         </div>
     </div>

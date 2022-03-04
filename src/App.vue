@@ -2,8 +2,34 @@
   <div id="app">
     <intro></intro>
     <main>
-      <section class="info-section">
-        <div class='text-section'>
+      <div class="info-section odd-section">
+        <div class='text-section left-text'>
+          <h2 class='title'>Что, зачем и почему?</h2>
+          <p class='text'>
+            Я подумал, что резюме в формате Word выглядит неубедительно.
+            Поэтому появился этот небольшой сайт - тут я буду выкладывать
+            ссылки на свои проекты, описывать свои навыки и прочее, прочее...
+          </p>
+        </div>
+        <div class='image-section right-image'>
+          <img src="./assets/logo.png" alt="IMAGE">
+        </div>
+      </div>
+      <div class="info-section even-section">
+        <div class='image-section left-image'>
+          <img src="./assets/logo.png" alt="IMAGE">
+        </div>
+        <div class='text-section right-text'>
+          <h2 class='title'>Основной стек</h2>
+          <p class='text'>
+            Сейчас я пишу на Vue + Node. Немножко
+            умею в Python и PHP (собственно, изучаю их для 
+            написания бэка). В качестве БД использую Postgres.
+          </p>
+        </div>
+      </div>
+      <div class="info-section odd-section">
+        <div class='text-section left-text'>
           <h2 class='title'>BIG TEXT</h2>
           <p class='text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -12,11 +38,11 @@
             Nulla ac ipsum placerat, pulvinar ligula at, tristique turpis. 
             In ut tellus at metus venenatis cursus.
           </p>
-          </div>
-        <div class='image-section'>
+        </div>
+        <div class='image-section right-image'>
           <img src="./assets/logo.png" alt="IMAGE">
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <p>Some contact information</p>
@@ -45,25 +71,40 @@ export default {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background-color: whitesmoke;
 }
 
 .info-section {
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10% 6%;
 }
 
+.odd-section{
+  background-color: whitesmoke;
+}
+
+.even-section{
+  background-color: #e6e6e6;
+}
+
 .text-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 5px;
   width: 45%;
+}
+
+.left-text{
+  margin-right: 5px;
+}
+
+.right-text{
+  margin-left: 5px;
 }
 
 .title {
@@ -81,9 +122,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
   width: 45%;
   background-size: cover;
+}
+
+.right-image{
+  margin-left: 5px;
+}
+
+.left-image{
+  margin-right: 5px;
 }
 
 img {
