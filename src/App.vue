@@ -12,7 +12,7 @@
           </p>
         </div>
         <div class='image-section right-image'>
-          <img src="./assets/logo.png" alt="IMAGE">
+          <img src="./assets/img-1.jpg" alt="IMAGE">
         </div>
       </div>
       <div class="info-section even-section">
@@ -20,43 +20,42 @@
           <img src="./assets/logo.png" alt="IMAGE">
         </div>
         <div class='text-section right-text'>
-          <h2 class='title'>Основной стек</h2>
+          <h2 class='title'>Frontend</h2>
           <p class='text'>
-            Сейчас я пишу на Vue + Node. Немножко
-            умею в Python и PHP (собственно, изучаю их для 
-            написания бэка). В качестве БД использую Postgres.
+            Почти все мои проекты написаны на Vue.js, 
+            хотя немного умею и в React. Собственно, я 
+            начинал программировать с фронта, поэтому в 
+            этой области знаю немного больше.
           </p>
         </div>
       </div>
       <div class="info-section odd-section">
         <div class='text-section left-text'>
-          <h2 class='title'>BIG TEXT</h2>
+          <h2 class='title'>Backend</h2>
           <p class='text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas id mauris vel leo congue semper. Suspendisse malesuada 
-            eu metus mattis hendrerit. Aenean rutrum in erat et tincidunt. 
-            Nulla ac ipsum placerat, pulvinar ligula at, tristique turpis. 
-            In ut tellus at metus venenatis cursus.
+            Бэк я обычно пишу на Node.js + Sequelize, в 
+            качестве БД использую Postgres. Также работал 
+            над сервером Python + Flask.
           </p>
         </div>
         <div class='image-section right-image'>
-          <img src="./assets/logo.png" alt="IMAGE">
+          <img src="./assets/node-logo.png" alt="IMAGE">
         </div>
       </div>
     </main>
-    <footer>
-      <p>Some contact information</p>
-    </footer>
+    <contacts/>
   </div>
 </template>
 
 <script>
 import Intro from './components/Intro.vue'
+import Contacts from './components/Contacts.vue'
 
 export default {
   name: 'App',
   components: {
     Intro,
+    Contacts,
   }
 }
 </script>
@@ -136,15 +135,16 @@ main {
 
 img {
   width: 70%;
+  border-radius: 10%;
 }
 
 footer {
-  background-color: black;
-  color: wheat;
+  background-color: wheat;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 100vh;
   font-size: 120%;
 }
 </style>

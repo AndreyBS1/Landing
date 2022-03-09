@@ -2,8 +2,8 @@
     <div class="intro">
         <div class="background-prism">
             <div class="welcome-text">
-                <h1>LANDING</h1>
-                <h6>или мое резюме</h6>
+                <h1>РЕЗЮМЕ</h1>
+                <h6>Автор: Бабенков Андрей</h6>
             </div>
         </div>
     </div>
@@ -35,7 +35,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    /* font-size: 150%; */
     color: whitesmoke;
 }
 </style>
