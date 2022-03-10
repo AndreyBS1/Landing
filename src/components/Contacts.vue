@@ -17,6 +17,9 @@
                 </i>
             </h6>
         </div>
+        <div>
+            <h4><a href="https://t.me/MusicTransfer_Bot">Телеграм бот для трансфера музыки</a></h4>
+        </div>
         <div class="contacts-header">
             <h2>Мои контакты</h2>
         </div>
