@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <intro-view />
+  </div>
+  <!-- <div id="app">
     <intro></intro>
     <main>
       <div class="info-section odd-section">
@@ -44,20 +47,22 @@
       </div>
     </main>
     <contacts/>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import Intro from './components/Intro.vue'
-import Contacts from './components/Contacts.vue'
+// import Intro from './components/Intro.vue'
+// import Contacts from './components/Contacts.vue'
+import IntroView from "@/views/IntroView";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Intro,
-    Contacts,
-  }
-}
+    // Intro,
+    // Contacts,
+    IntroView,
+  },
+};
 </script>
 
 <style>
@@ -83,11 +88,11 @@ main {
   padding: 10% 6%;
 }
 
-.odd-section{
+.odd-section {
   background-color: whitesmoke;
 }
 
-.even-section{
+.even-section {
   background-color: #e6e6e6;
 }
 
@@ -98,11 +103,11 @@ main {
   width: 45%;
 }
 
-.left-text{
+.left-text {
   margin-right: 5px;
 }
 
-.right-text{
+.right-text {
   margin-left: 5px;
 }
 
@@ -125,11 +130,11 @@ main {
   background-size: cover;
 }
 
-.right-image{
+.right-image {
   margin-left: 5px;
 }
 
-.left-image{
+.left-image {
   margin-right: 5px;
 }
 
