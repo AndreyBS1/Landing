@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <intro-view />
+    <!-- <intro-view /> -->
+    <stack-view />
   </div>
   <!-- <div id="app">
     <intro></intro>
@@ -53,14 +54,16 @@
 <script>
 // import Intro from './components/Intro.vue'
 // import Contacts from './components/Contacts.vue'
-import IntroView from "@/views/IntroView";
+// import IntroView from "@/views/IntroView";
+import StackView from "@/views/StackView";
 
 export default {
   name: "App",
   components: {
     // Intro,
     // Contacts,
-    IntroView,
+    // IntroView,
+    StackView,
   },
 };
 </script>
@@ -70,10 +73,10 @@ export default {
   font-family: "Rany", sans-serif;
   margin: 0;
   padding: 0;
-  color: #1b1d1c;
+  /* color: #1b1d1c; */
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,5 +154,5 @@ footer {
   align-items: center;
   height: 100vh;
   font-size: 120%;
-}
+} */
 </style>
