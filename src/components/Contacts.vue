@@ -7,7 +7,7 @@
             <h4><a href="https://github.com/AndreyBS1">Github</a></h4>
         </div>
         <div class="contacts-text">
-            <h4><a href="https://noteskeeperapp.herokuapp.com/">Noteskeeper</a></h4>
+            <h4><a href="https://noteskeeperappl.herokuapp.com/">Noteskeeper</a></h4>
             <h6 class="comment" align="justify">
                 <i>
                     Бесплатный сервер уходит в спящий режим, когда 
